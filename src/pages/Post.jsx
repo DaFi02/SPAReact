@@ -15,7 +15,8 @@ const Post = ({ url }) => {
         buscar(`/posts/${id}`, setPost).catch(() => {
             navigate("/not-found")
         })
-    }, [])
+    }, [id])
+
 
     return (
         <main className="container flex flex--center">
